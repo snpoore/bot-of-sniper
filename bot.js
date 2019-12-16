@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');  //WESO#0001
+const Discord = require('discord.js');  //WESO#0001
 const client = new Discord.Client();  //WESO#0001
 const moment = require('moment');
 const zalgo = require('zalgolize');  //WESO#0001
@@ -868,7 +868,7 @@ client.on('message', PuP => {
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = [' -help',`Im on ${client.guilds.size} servers`,`i ALBZON ${client.users.size} Members`,' BAD Is The Best ','Just Do It'];
+    var setGame = [' -help',`Im on ${client.guilds.size} servers`,`i help ${client.users.size} Members`,' BAD Is The Best ','Just Do It'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -966,7 +966,7 @@ client.on('message', message=> {
     if (message.author.bot) return;
     if (message.isMentioned(client.user))
     {
-    message.reply("**My Prefix Is$ : `-`")
+    message.reply("**My Prefix Is** : `-`")
     }
 });
 
